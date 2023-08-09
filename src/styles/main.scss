@@ -1,6 +1,5 @@
 @use 'variaveis';
 @use 'hero';
-@use 'shows';
 @use 'plans';
 @use 'devices';
 @use 'faq';
@@ -8,15 +7,15 @@
 @use 'header';
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-family: Planes;
+    src: url(../../assets/fonts/Planewalker.otf);
     font-weight: 400;
 
 }
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-family: Planes;
+    src: url(../../assets/fonts/Planewalker_Bold.otf);
     font-weight: 700;
     
 }
@@ -25,7 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Avenir, sans-serif;
+    font-family: Planes, sans-serif;
     list-style: none;
 }
 
@@ -105,15 +104,15 @@ body {
     width: 100%;
     height: 60px;
     font-size: 18px;
-    color: variaveis.$corTextoSecundario;
+    color: #fff;
     background-color: variaveis.$corDeFundoBotaoPrimario;
     border-radius: 4px;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
     padding: 8px 14px;
-    letter-spacing: 1px;
     border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+    
 
     &:hover{
         background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);

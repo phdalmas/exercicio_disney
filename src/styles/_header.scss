@@ -8,19 +8,6 @@
     transition: background-color .5s ease;
     z-index: 1;
 
-    &--is-hidden {
-        background-color: transparent;
-        transition: background-color .5s ease;
-
-        .header {
-            &__logo, &__links__item:first-child {
-                opacity: 0;
-                visibility: hidden;
-                transition: opacity .5s ease;
-            }
-        }
-    }
-
     &__container {
         padding: 8px 36px;
         display: flex;
@@ -32,6 +19,11 @@
     }
 
     &__logo {
+        img{
+            max-width: 70px;
+            margin-top: 5px;
+        }
+        align-items: center;
         max-width: 80px;
         width: 100%;
         margin: 5px;
@@ -44,9 +36,10 @@
 
     &__links {
         display: flex;
+        align-items: center;
 
         &__item {
-            margin: 5px;
+            margin: 10px;
             transition: opacity .5s ease;
         }
     }
